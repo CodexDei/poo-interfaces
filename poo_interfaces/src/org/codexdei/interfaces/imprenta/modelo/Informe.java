@@ -1,6 +1,6 @@
 package org.codexdei.interfaces.imprenta.modelo;
 
-public class Informe extends Hoja{
+public class Informe extends Hoja implements Imprimible{
 
     //Atributos de la clase
     private String autor;
