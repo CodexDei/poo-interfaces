@@ -8,11 +8,11 @@ public class Libro implements Imprimible{
     //Atributos de la clase
     private List<Imprimible> paginas;
     private String titulo;
-    private String autor;
+    private Persona autor;
     private Genero genero;
 
     //Contructor
-    public Libro(String titulo, String autor, Genero genero){
+    public Libro(String titulo, Persona autor, Genero genero){
 
         this.titulo = titulo;
         this.autor = autor;
@@ -40,6 +40,4 @@ public class Libro implements Imprimible{
         }
         return sb.toString();
     }
-
-
 }

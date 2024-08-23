@@ -3,11 +3,11 @@ package org.codexdei.interfaces.imprenta.modelo;
 public class Informe extends Hoja implements Imprimible{
 
     //Atributos de la clase
-    private String autor;
-    private String revisor;
+    private Persona autor;
+    private Persona revisor;
 
     //Constructor
-    public Informe(String autor, String revisor, String contenido){
+    public Informe(Persona autor, Persona revisor, String contenido){
 
         super(contenido);
         this.autor = autor;
@@ -18,6 +18,6 @@ public class Informe extends Hoja implements Imprimible{
     public String imprimir() {
         return "Informe escrito por: " + this.autor + "\n" +
                "Revisado por: " + this.revisor + "\n" +
-               this.contenido;
+               this.contenido + "\n";
     }
 }
